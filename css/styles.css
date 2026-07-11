@@ -457,4 +457,16 @@ footer a:hover {
 
     }
 
+	.author-section {
+		display: grid;
+		grid-template-columns: 300px 1fr;
+		gap: 3rem;
+		align-items: start;
+	}
+
+	.author-photo {
+		width: 100%;
+		border-radius: 10px;
+		box-shadow: var(--shadow);
+	}
 }
