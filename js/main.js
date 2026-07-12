@@ -1,13 +1,19 @@
 async function loadPartial(id, file) {
+    try {
+        const response = await fetch(file);
 
-    const response = await fetch(file);
+        if (!response.ok) {
+            throw new Error(`Couldn't load ${file}`);
+        }
 
-    const html = await response.text();
+        const html = await response.text();
 
-    document.getElementById(id).innerHTML = html;
+        document.getElementById(id).innerHTML = html;
 
-    highlightCurrentPage();
-
+        highlightCurrentPage();
+    } catch (err) {
+        console.error(err);
+    }
 }
 
 function highlightCurrentPage() {
