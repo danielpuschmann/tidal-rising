@@ -424,6 +424,83 @@ footer a:hover {
 
 
 /* ========================================
+   SUBSCRIBE PAGE
+======================================== */
+
+.subscribe-page {
+
+    padding: 5rem 0;
+
+}
+
+.subscribe-container {
+
+    max-width: 700px;
+
+}
+
+.subscribe-intro {
+
+    text-align: center;
+
+    margin-bottom: 3rem;
+
+}
+
+.subscribe-banner {
+
+    width: 100%;
+    max-width: 380px;
+
+    margin: 0 auto 2rem;
+
+    border-radius: 8px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.subscribe-intro p {
+
+    max-width: 550px;
+
+    margin: auto;
+
+}
+
+/* ========================================
+   KLAVIYO
+======================================== */
+
+.klaviyo-form {
+
+    margin: auto;
+
+}
+
+.klaviyo-form form {
+
+    border-radius: 10px !important;
+
+    overflow: hidden;
+
+}
+
+.klaviyo-form input {
+
+    border-radius: 6px !important;
+
+}
+
+.klaviyo-form button {
+
+    border-radius: 6px !important;
+
+    font-weight: 600 !important;
+
+}
+
+/* ========================================
    RESPONSIVE
 ======================================== */
 
