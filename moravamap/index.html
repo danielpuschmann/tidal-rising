@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map of Morava | Burn While Reading</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <style>
+        .map-page {
+            padding: 3rem 0;
+        }
+
+        .map-page h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .map-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 2rem auto;
+        }
+
+        .map-image-link {
+            display: block;
+        }
+
+        .map-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section class="map-page">
+            <div class="container">
+                <h2>Map of Morava</h2>
+                <p>Explore the canal city from Tidal Rising.</p>
+                <p>Tap the map to open the full-size image and zoom in.</p>
+
+                <a class="map-image-link"
+                   href="/images/morava-map.jpg"
+                   target="_blank"
+                   rel="noopener">
+                    <img class="map-image"
+                         src="/images/morava-map.jpg"
+                         alt="Map of Morava, the canal city featured in Tidal Rising"
+                         width="4282"
+                         height="2866">
+                </a>
+
+                <div class="map-actions">
+                    <a class="button"
+                       href="/images/morava-map.jpg"
+                       target="_blank"
+                       rel="noopener">
+                        Open full-size map
+                    </a>
+
+                    <a class="button"
+                       href="/images/morava-map.jpg"
+                       download="morava-map.jpg">
+                        Download map
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

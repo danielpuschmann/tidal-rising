@@ -16,22 +16,30 @@ async function loadPartial(id, file) {
     }
 }
 
-function highlightCurrentPage() {
+function normalizePath(path) {
+    return path
+        .replace(/\/index\.html$/, "/")
+        .replace(/\/+$/, "") || "/";
+}
 
-    const page = location.pathname.split("/").pop() || "index.html";
+function highlightCurrentPage() {
+    const currentPath = normalizePath(location.pathname);
 
     document.querySelectorAll("nav a").forEach(link => {
+        const linkPath = normalizePath(
+            new URL(link.href, location.origin).pathname
+        );
 
-        const href = link.getAttribute("href").replace("/", "");
+        const isCurrent = linkPath === currentPath;
 
-        if (href === page) {
+        link.classList.toggle("active", isCurrent);
 
-            link.classList.add("active");
-
+        if (isCurrent) {
+            link.setAttribute("aria-current", "page");
+        } else {
+            link.removeAttribute("aria-current");
         }
-
     });
-
 }
 
 
