@@ -34,6 +34,7 @@ function highlightCurrentPage() {
 
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
 
     loadPartial("header", "/partials/header.html");
